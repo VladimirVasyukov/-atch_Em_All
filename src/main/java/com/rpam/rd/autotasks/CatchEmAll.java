@@ -44,7 +44,7 @@ public class CatchEmAll {
         } catch (IOException e) {
             throw new IllegalArgumentException("Resource error", e);
         } catch (ArithmeticException | NumberFormatException e) {
-            System.err.print(e);
+            System.err.print(e.getMessage());
         }
     }
 }
